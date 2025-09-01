@@ -26,6 +26,8 @@ def get_db():
     finally:
         db.close()
 
+# endpoints
+
 @app.post("/generate/")
 def generate_entry(db: Session=Depends(get_db)):
     random_content = ''.join(random.choices(string.ascii_letters, k=10))
@@ -38,5 +40,11 @@ def generate_entry(db: Session=Depends(get_db)):
 @app.get("/entries/")
 def get_entries(db: Session= Depends(get_db)):
     return db.query(models.Entry).all()
+
+@app.delete("/clear/")
+def clear_database(db: Session=Depends(get_db)):
+    db.query(models.Entry).delete()
+    db.commit()
+    return {"message": "Database cleared"}
     
 

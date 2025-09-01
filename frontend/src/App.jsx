@@ -24,6 +24,15 @@ function App() {
     }
   };
 
+  const clearDatabase = async () => {
+    try{
+      await axios.delete("http://127.0.0.1:8000/clear/")
+      setEntries([])
+    } catch(err){
+      console.error("Error clearing database:", err)
+    }
+  }
+
   useEffect(() => {
     fetchEntries();
   }, []);
@@ -32,10 +41,10 @@ function App() {
     <div className="App">
       <h1>Database Entries</h1>
       <button onClick={generateEntry}>Generate Random Entry</button>
+      <button onClick= {clearDatabase}>Clear Database</button>
       <EntryList entries={entries} />
     </div>
   );
 }
-
 
 export default App;
