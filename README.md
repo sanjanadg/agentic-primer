@@ -7,7 +7,7 @@ This project is a simple web application that allows users to generate and view 
 
 ## Features
 
-- **Frontend**: Displays a list of database entries and allows users to generate new entries.
+- **Frontend**: Displays a list of database entries and allows users to generate new entries. The user can also delete all entries in the database.
 - **Backend**: Handles API requests to fetch and generate entries.
 
 ---
