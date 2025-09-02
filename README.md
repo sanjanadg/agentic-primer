@@ -31,19 +31,18 @@ npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fo
 
 ## Setup & Directions:
 
-Open two terminals directed to the agentic-primer projects then follow the steps below.
-
-Frontend setup:
-
-- cd frontend
-- npm install
-- npm run dev
-
-Backend setup:
-
-- cd backend
-- pip install -r requirements.txt
-- uvicorn main:app --reload
-
-Open the local host frontend link to view the application.
+- Open the unzipped agent-primer project in an IDE
+- Open two terminals and cd to the location of the agentic-primer projects
+- Setup the backend:
+-- cd backend
+-- pip install -r requirements.txt
+-- uvicorn main:app --reload
+- Setup the frontend:
+-- cd frontend
+-- npm install
+-- npm run dev
+- View and test
+-- Open the local host link in a web browser (likely http://localhost:5173/)
+-- You should be able to generate random entries into the database and view them on the frontend
+-- You should also be able to clear the database
 
