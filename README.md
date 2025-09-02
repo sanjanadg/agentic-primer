@@ -45,5 +45,3 @@ This project uses Font Awesome for icons. Ensure the following dependencies are 
 
 ```bash
 npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core
-
----
