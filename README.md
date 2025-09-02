@@ -43,6 +43,6 @@ npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fo
   - npm run dev
 - View and test:
   - Open the local host link in a web browser (likely http://localhost:5173/)
-  - You should be able to generate random entries into the database and view them on the frontend
-  - You should also be able to clear the database
+  - Click "Generate Random Entry" button to generate random entries into the database and view them on the frontend
+  - Click "Clear Database" to clear the database
 
