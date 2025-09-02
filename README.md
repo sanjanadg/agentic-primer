@@ -21,6 +21,13 @@ Make sure you have the following installed on your system:
 - **npm** or **yarn**
 - **pip**
 
+### Frontend Dependencies
+
+This project uses Font Awesome for icons. Ensure the following dependencies are installed:
+
+```bash
+npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core
+
 ---
 
 ## To run this project:

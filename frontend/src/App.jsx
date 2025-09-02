@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import EntryList from "./EntryList";
+import './App.css'; 
 
 function App() {
   const [entries, setEntries] = useState([]);
@@ -38,10 +39,18 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" class="container">
       <h1>Database Entries</h1>
-      <button onClick={generateEntry}>Generate Random Entry</button>
-      <button onClick= {clearDatabase}>Clear Database</button>
+
+      <div class = "button-row">
+      <div class = "button">
+        <button onClick={generateEntry}>Generate Random Entry</button>
+      </div>
+      <div class = "button">
+        <button onClick= {clearDatabase}>Clear Database</button>
+      </div>
+      </div>
+      
       <EntryList entries={entries} />
     </div>
   );
