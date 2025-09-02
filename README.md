@@ -21,27 +21,29 @@ Make sure you have the following installed on your system:
 - **npm** or **yarn**
 - **pip**
 
+This project uses Font Awesome for icons. Ensure the following dependencies are installed:
+
+```bash
+npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core
+```
+
 ---
 
-### Directions:
+## Setup & Directions:
 
-Frontend:
+Open two terminals directed to the agentic-primer projects then follow the steps below.
+
+Frontend setup:
 
 - cd frontend
 - npm install
 - npm run dev
 
-Backend:
+Backend setup:
 
 - cd backend
 - pip install -r requirements.txt
 - uvicorn main:app --reload
 
+Open the local host frontend link to view the application.
 ---
-
-# Font Awesome Prereq
-
-This project uses Font Awesome for icons. Ensure the following dependencies are installed:
-
-```bash
-npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons @fortawesome/fontawesome-svg-core
