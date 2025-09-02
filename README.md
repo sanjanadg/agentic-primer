@@ -46,4 +46,4 @@ Backend setup:
 - uvicorn main:app --reload
 
 Open the local host frontend link to view the application.
----
+
